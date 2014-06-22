@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_modo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Configuración"
+                    android:textColor="#FF9933"
+                    android:textSize="24sp" />
+			
+                      
+
+                <Button
+                    android:id="@+id/boton_volver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/orange_button"
+                    android:drawableRight="@drawable/back"
+                    android:onClick="irAPrincipal" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_grupo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="#FFFFFF">
+
+                <RadioButton
+                    android:id="@+id/radio_foto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Modo foto" 
+                    android:textColor="#FFFFFF"/>
+
+                <RadioButton
+                    android:id="@+id/radio_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modo vídeo" 
+                    android:textColor="#FFFFFF"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/text_almacenado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Periodo de tiempo a almacenar:" 
+                android:textColor="#AAAAAA"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_almacenado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:textColor="#AAAAAA"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

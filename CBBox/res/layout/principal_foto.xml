@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+     android:background="@drawable/fondo">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.90"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:text="MODO FOTO" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/boton_activarparar"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="0.08"
+                android:background="@drawable/orange_button"
+                android:text="Activar/Parar" />
+
+            <Button
+                android:id="@+id/boton_coche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:onClick="guardarCoche"
+                 android:drawableBottom="@drawable/coche"
+                 android:background="@drawable/blue_button" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/boton_tramo_interes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:text="Tramo de interés"
+            android:drawableBottom="@drawable/pincho"
+            android:layout_margin="1dp"
+            android:onClick="guardarTramo"
+            android:background="@drawable/orange_button"/> 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/boton_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                 android:onClick="irAPerfil"
+                android:background="@drawable/blue_button"
+                android:drawableBottom="@drawable/usu_2" />
+
+            <Button
+                android:id="@+id/boton_configuracion"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1.11"
+                android:onClick="irAConfiguracion"
+                android:background="@drawable/blue_button"
+                android:drawableBottom="@drawable/conf_2" />
+
+            <Button
+                android:id="@+id/boton_historial"
+                android:layout_width="85dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                 android:onClick="irAHistorial"
+                android:background="@drawable/blue_button"
+                android:drawableBottom="@drawable/his" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/surface_foto"
+        android:layout_width="268dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+</LinearLayout>

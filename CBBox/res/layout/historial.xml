@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:paddingLeft="10dp"
+            android:text="Historial CBBox"
+            android:textColor="#FF9933"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/boton_volver"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/orange_button"
+            android:drawableRight="@drawable/back"
+            android:onClick="irAPrincipal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:paddingLeft="10dp"
+        android:text="Mis recorridos"
+        android:textColor="#AAAAAA" />
+
+    <ListView
+        android:id="@+id/lista_rutas"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        
+        android:background="#DDDDDD" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Recorrido seleccionado"
+        android:textColor="#AAAAAA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:padding="10dp" >
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="205dp"
+            android:layout_height="231dp"
+            android:layout_marginRight="10dp"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.61"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/boton_archivos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.03"
+                android:background="@drawable/orange_button"
+                android:onClick="irAArchivos"
+                android:text="VER" />
+
+            <Button
+                android:id="@+id/boton_borrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:background="@drawable/blue_button"
+                android:text="Borrar" />
+
+            <Button
+                android:id="@+id/boton_borrar_todo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_button"
+                android:onClick="borrarTodo"
+                android:text="Borrar todo" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

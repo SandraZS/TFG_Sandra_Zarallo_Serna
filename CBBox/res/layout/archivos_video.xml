@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text_modo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Videos"
+            android:textColor="#FF9933"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/boton_volver"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/orange_button"
+            android:drawableRight="@drawable/back"
+            android:onClick="irAHistorial" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lista_archivos"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:background="#DDDDDD" >
+    </ListView>
+
+    <VideoView
+        android:id="@+id/muestra_video"
+        android:layout_width="258dp"
+        android:layout_height="174dp"
+        android:layout_marginLeft="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/fondo">
+
+    
+     <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    <TextView
+        android:id="@+id/text_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos de usuario"
+        android:textSize="20sp"
+        android:textColor="#FF9933" />
+
+    <TextView
+        android:id="@+id/text_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre: "  
+        android:textColor="#AAAAAA"/>
+
+    <EditText
+        android:id="@+id/nombre_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#AAAAAA" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/text_apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido: " 
+        android:textColor="#AAAAAA"/>
+
+    <EditText
+        android:id="@+id/apellido_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:textColor="#AAAAAA"/>
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: " 
+        android:textColor="#AAAAAA"/>
+
+    <EditText
+        android:id="@+id/email_usuarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#AAAAAA" />
+
+    <TextView
+        android:id="@+id/text_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono de contacto:" 
+        android:textColor="#AAAAAA"/>
+
+    <EditText
+        android:id="@+id/telefono_contacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone" 
+        android:textColor="#AAAAAA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/boton_alta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button"
+            android:onClick="altaUsuario"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/boton_borrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button"
+            android:onClick="borrar"
+            android:text="Borrar todo" />
+    </LinearLayout>
+
+         </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

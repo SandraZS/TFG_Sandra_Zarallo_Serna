@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="valores_almacenado">
+        <item>30 seg.</item>
+        <item>1 min.</item>
+        <item>5 min.</item>
+        
+        <item>Trayecto completo</item>
+    </string-array>
+    
+    
+     <string-array name="valores_intervalo">
+        <item>3 seg.</item>
+        <item>5 seg.</item>
+        <item>10 seg.</item>
+    </string-array>
+</resources>
